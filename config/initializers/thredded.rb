@@ -70,7 +70,7 @@ Thredded.messageboards_order = :position
 Thredded.email_from = %("#{I18n.t('brand.name')}" <#{Settings.email_sender}>)
 
 # Emails going out will prefix the "Subject:" with the following string
-# Thredded.email_outgoing_prefix = '[My Forum] '
+ Thredded.email_outgoing_prefix = '[Клуб любителей чая] '
 #
 # The parent mailer for all Thredded mailers
 Thredded.parent_mailer = 'ApplicationMailer'
@@ -86,7 +86,7 @@ Thredded.layout = 'application'
 # Thredded.slugifier = ->(input) { input.parameterize }
 
 # If your forum is in a language other than English, you might want to use the babosa gem instead
-# Thredded.slugifier = ->(input) { Babosa::Identifier.new(input).normalize.transliterate(:russian).to_s }
+ Thredded.slugifier = ->(input) { Babosa::Identifier.new(input).normalize.transliterate(:russian).to_s }
 
 # ==> Post Content Formatting
 # Customize the way Thredded handles post formatting.
@@ -151,7 +151,7 @@ Thredded.layout = 'application'
 # Change how users can choose to be notified, by adding notifiers here, or removing the initializer altogether
 #
 # default:
-# Thredded.notifiers = [Thredded::EmailNotifier.new]
+ Thredded.notifiers = [Thredded::EmailNotifier.new]
 #
 # none:
 # Thredded.notifiers = []
